@@ -54,7 +54,7 @@ export default function Navbar() {
           ))}
           <button
             onClick={toggleLocale}
-            className="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-all glass px-3 py-1.5 rounded-full"
+            className="flex items-center gap-2 text-sm font-bold bg-[#00d2ff]/20 text-white border border-[#00d2ff]/50 hover:bg-[#00d2ff]/40 hover:scale-105 transition-all px-4 py-1.5 rounded-full shadow-[0_0_10px_rgba(0,210,255,0.3)]"
           >
             <Globe size={16} />
             {locale.toUpperCase()}
@@ -69,7 +69,11 @@ export default function Navbar() {
 
         {/* Mobile Nav Toggle */}
         <div className="md:hidden flex items-center gap-4">
-          <button onClick={toggleLocale} className="text-gray-300">
+          <button 
+            onClick={toggleLocale} 
+            className="flex items-center gap-1.5 font-bold bg-[#00d2ff]/20 text-white border border-[#00d2ff]/50 px-3 py-1 rounded-full shadow-[0_0_10px_rgba(0,210,255,0.3)]"
+          >
+            <Globe size={14} />
             {locale.toUpperCase()}
           </button>
           <button onClick={() => setIsOpen(!isOpen)} className="text-white">

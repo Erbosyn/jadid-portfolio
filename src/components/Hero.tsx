@@ -32,7 +32,7 @@ export default function Hero() {
         >
           <span className="text-white">Jadid </span>
           <br className="md:hidden" />
-          <span className="text-gradient neon-glow">— Mobile & AI Developer</span>
+          <span className="text-gradient neon-glow">Mobile & AI Developer</span>
         </motion.h1>
 
         <motion.p

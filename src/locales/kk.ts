@@ -6,7 +6,7 @@ export const kk = {
     admin: "Админ"
   },
   hero: {
-    title: "Jadid — Mobile & AI Developer",
+    title: "Jadid Mobile & AI Developer",
     subtitle: "Мобильді қосымшалар, AI шешімдер мен заманауи веб-сайттар әзірлеймін.",
     cta: "WhatsApp арқылы жазу"
   },

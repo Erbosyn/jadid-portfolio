@@ -6,7 +6,7 @@ export const ru = {
     admin: "Админ"
   },
   hero: {
-    title: "Jadid — Mobile & AI Developer",
+    title: "Jadid Mobile & AI Developer",
     subtitle: "Разрабатываю мобильные приложения, AI-решения и современные веб-сайты.",
     cta: "Написать в WhatsApp"
   },
