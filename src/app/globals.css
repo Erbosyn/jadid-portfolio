@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-space-black: #050505;
+  --color-neon-blue: #00d2ff;
+  --color-neon-purple: #8a2be2;
+  
+  --font-inter: 'Inter', sans-serif;
+  
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+}
+
+@layer base {
+  :root {
+    --background: #050505;
+    --foreground: #ffffff;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-inter), system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-[#050505]/50 backdrop-blur-lg border border-white/10 shadow-[0_0_15px_rgba(0,210,255,0.1)];
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#00d2ff] to-[#8a2be2];
+  }
+
+  .neon-border {
+    @apply border border-[#00d2ff]/30 shadow-[0_0_10px_rgba(0,210,255,0.2)];
+  }
+  
+  .neon-glow {
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.2), 0 0 20px rgba(0, 210, 255, 0.1);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.4), 0 0 30px rgba(0, 210, 255, 0.2);
+  }
+}
